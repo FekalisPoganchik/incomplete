@@ -1,0 +1,23 @@
+@import "../../style/variables.scss";
+
+.header {
+    background-color: $neutral100;
+    height: 100px;
+    .wrapper-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 53px;
+        .btn-wrapper {
+            :first-child {
+                margin-right: 10px;
+            }
+        }
+        .search {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 250px;
+            height: 28px;
+        }
+    }
+}

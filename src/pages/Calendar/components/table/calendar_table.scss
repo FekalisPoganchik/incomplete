@@ -1,0 +1,47 @@
+@import "../../../../style/variables.scss";
+
+.wrapper_calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-left: 1px solid $dark200;
+    border-top: 1px solid $dark200;
+    :hover {
+        background-color: $blue200;
+    }
+    .day {
+        border-bottom: 1px solid $dark200;
+        border-right: 1px solid $dark200;
+        text-align: center;
+        height: 103px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 200ms, color 200ms;
+        text-align: initial;
+        padding: 8px;
+        .numberDay {
+            color: $dark100;
+            line-height: 1em;
+            font-size: 14px;
+        }
+        .event {
+            color: $dark200;
+            line-height: 1em;
+            margin-top: 8px;
+        }
+        .participants {
+            color: $dark100;
+            line-height: 1em;
+            margin-top: 8px;
+        }
+    }
+    // .today {
+    //     background-color: $neutral100;
+    // }
+    // .weekend {
+    //     color: $blue200;
+    // }
+    // .selected {
+    //     background-color: $blue200;
+    //     color: $light100;
+    // }
+}
